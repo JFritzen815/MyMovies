@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Q9l-QP-Are">
+                                <rect key="frame" x="83" y="0.0" width="730" height="414"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lik-Nk-MYz">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="414"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frb-5P-fVy">
+                                                <rect key="frame" x="13" y="51" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer1.png"/>
+                                                <connections>
+                                                    <segue destination="NRH-qt-vjR" kind="show" identifier="first" id="N5Q-31-HB7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="frb-5P-fVy" firstAttribute="centerX" secondItem="lik-Nk-MYz" secondAttribute="centerX" id="0c6-M0-L66"/>
+                                            <constraint firstItem="frb-5P-fVy" firstAttribute="leading" secondItem="lik-Nk-MYz" secondAttribute="leading" constant="13" id="KFN-e7-Awc"/>
+                                            <constraint firstItem="frb-5P-fVy" firstAttribute="centerY" secondItem="lik-Nk-MYz" secondAttribute="centerY" id="Ldw-fw-ZxG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPN-zv-LHK">
+                                        <rect key="frame" x="245" y="0.0" width="240" height="414"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdc-L9-SxB">
+                                                <rect key="frame" x="13" y="51" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer2.png"/>
+                                                <connections>
+                                                    <segue destination="NRH-qt-vjR" kind="show" identifier="second" id="ZPt-VH-MvT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="bdc-L9-SxB" firstAttribute="centerY" secondItem="yPN-zv-LHK" secondAttribute="centerY" id="1bH-UX-p98"/>
+                                            <constraint firstItem="bdc-L9-SxB" firstAttribute="centerX" secondItem="yPN-zv-LHK" secondAttribute="centerX" id="Zll-46-qds"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-zI-f0I">
+                                        <rect key="frame" x="490" y="0.0" width="240" height="414"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCR-ax-pO9">
+                                                <rect key="frame" x="13" y="51" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer3.png"/>
+                                                <connections>
+                                                    <segue destination="NRH-qt-vjR" kind="show" identifier="third" id="ZXW-8Y-2hq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="PCR-ax-pO9" firstAttribute="centerX" secondItem="LPn-zI-f0I" secondAttribute="centerX" id="emB-e0-QxO"/>
+                                            <constraint firstItem="PCR-ax-pO9" firstAttribute="centerY" secondItem="LPn-zI-f0I" secondAttribute="centerY" id="qSz-IP-hwI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yPN-zv-LHK" firstAttribute="centerX" secondItem="Q9l-QP-Are" secondAttribute="centerX" id="u7n-Ks-iDy"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q9l-QP-Are" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="9Wf-TP-YIx"/>
+                            <constraint firstItem="Q9l-QP-Are" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vu7-2t-yy4"/>
+                            <constraint firstItem="Q9l-QP-Are" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a4X-zk-Qx2"/>
+                            <constraint firstItem="Q9l-QP-Are" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vIA-xA-bHQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.61607142857142" y="92.753623188405811"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="qck-Yb-U0G">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="NRH-qt-vjR" customClass="PlayerViewController" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eJo-fo-gFI"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ish-TK-jSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="891"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZXW-8Y-2hq"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="trailer1.png" width="214" height="312"/>
+        <image name="trailer2.png" width="214" height="312"/>
+        <image name="trailer3.png" width="214" height="312"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
